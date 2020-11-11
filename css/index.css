@@ -27,6 +27,7 @@
 }
 body {
   position: relative;
+  background-color: #ffffff;
 }
 * {
   box-sizing: border-box;
