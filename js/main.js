@@ -47,9 +47,6 @@ var bindModals = function (triggerSelector, modalSelector, closeSelector, wrappe
 bindModals('.header__call-button', '#modal__wrapper--phone', '.modal__close', '.modal__wrapper');
 bindModals ('.modal__submit', '#modal__wrapper--answer','.modal--answer .modal__close', '.modal__wrapper');
 
-
-
-
 // CHECK NUM
 
 var checkNumInputs =  function(selector) {
@@ -96,7 +93,6 @@ var openAnswer = function (wrapperSelector, faqItemSelector, openClass) {
   });
 };
 openAnswer('.faq__list', '.faq__item', 'opened');
-
 
 // CAROUSEL
 
