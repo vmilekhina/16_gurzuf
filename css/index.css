@@ -246,10 +246,10 @@ h2 {
 }
 .header__menu-sublist {
   margin-top: 8px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .header__menu-subitem {
-  margin-bottom: 10px;
+  margin-bottom: 2px;
 }
 
 .header__menu-sublink {
@@ -927,7 +927,7 @@ h2 {
 }
 .room__button {
   position: absolute;
-  top: 350px;
+  top: 375px;
 
   width: 40px;
   height: 40px;
@@ -950,7 +950,7 @@ h2 {
 .room__list {
   position: relative;
   width: 100%;
-  min-height: 457px;
+  min-height: 470px;
   display: flex;
   flex-wrap: nowrap;
 }
