@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>Отель Gurzuf Relax в Крыму</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link href="css/jquery-ui-1.9.2.custom.css" rel="stylesheet">
+  <script src="js/jquery-1.8.3.js"></script>
+	<script src="js/jquery-ui-1.9.2.custom.js"></script>
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body class="">
+  <header class="header header--services">
+    <div class="header__wrapper">
+      <nav class="header__menu">
+        <input class="header__checkbox" type="checkbox" id="check-menu">
+        <label class="header__label" for="check-menu"></label>
+          <div class="header__menu-button">
+            <div class="header__burger">
+              <div class="burger--line line-first"></div>
+              <div class="burger--line line-second"></div>
+              <div class="burger--line line-third"></div>
+              <div class="burger--line line-fourth"></div>
+            </div>
+            <ul class="header__menu-list">
+            <li class="header__menu-item">Об отеле
+                <ul class="header__menu-sublist">
+                  <li class="header__menu-subitem"><a href="about.html" class="header__menu-sublink">О нас</a></li>
+                  <li class="header__menu-subitem"><a href="rooms.html" class="header__menu-sublink">Номера</a></li>
+                  <li class="header__menu-subitem"><a href="services.html" class="header__menu-sublink">Услуги</a></li>
+                  <li class="header__menu-subitem"><a href="entertainment.html" class="header__menu-sublink">Развлечения</a></li>
+                  <li class="header__menu-subitem"><a href="reviews.html" class="header__menu-sublink">Отзывы</a></li>
+                </ul>
+            </li>
+            <li class="header__menu-item">О курорте
+              <ul class="header__menu-sublist">
+                <li class="header__menu-subitem"><a href="resort.html" class="header__menu-sublink">Курорт Гурзуф</a></li>
+                <li class="header__menu-subitem"><a href="excursions.html" class="header__menu-sublink">Экскурсии</a></li>
+                <li class="header__menu-subitem"><a href="crimea.html" class="header__menu-sublink">Крым</a></li>
+              </ul>
+            </li>
+            <li class="header__menu-item">Для путешествующих
+              <ul class="header__menu-sublist">
+                <li class="header__menu-subitem"><a href="for-travellers.html" class="header__menu-sublink">Служба поддержки</a></li>
+                <li class="header__menu-subitem"><a href="faq.html" class="header__menu-sublink">Часто задаваемые вопросы</a></li>
+                <li class="header__menu-subitem"><a href="contacts.html" class="header__menu-sublink">Контакты</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="header__logo">
+          <a class="header__logo-link" href="index.html">
+            <picture>
+              <source media="(min-width: 1920px)" srcset="img/index/logo-desktop.png">
+              <img src="img/index/logo-mobile.png" alt="Логотип Отель Gurzuf Relax" class="header__img">
+            </picture>
+          </a>
+        </div>
+        <div class="header__address">
+          Крым, пгт. Гурзуф, ул. Ялтинская, д. 14-з
+        </div>
+        <div class="header__contacts">
+          <a href="tel:8 578 503 48 82" class="header__phone-link">+ 7-578-503-48-82</a>
+          <ul class="header__social-list">
+            <li class="header__social-item"><a href="#" class="header__social-link"><img src="img/index/socials/vb.svg" alt="Мы в Viber" width="18px" height="19px"></a>
+            </li>
+            <li class="header__social-item"><a href="#" class="header__social-link"><img src="img/index/socials/tg.svg" alt="Мы в Telegram" width="23px" height="19px"></a></li>
+            <li class="header__social-item"><a href="#" class="header__social-link"><img src="img/index/socials/wa.svg" alt="Мы в WhatsApp" width="19px" height="19px"></a></li>
+          </ul>
+        </div>
+        <div class="header__call">
+          <button class="header__call-button button" type="button">Заказать звонок</button>
+        </div>
+      </nav>
+    </div>
+    <div class="intro__wrapper">
+      <h1 class="intro__title intro__title--services">Услуги</h1>
+      <div class="intro__book intro__book--services">
+        <form action="post" class="intro__book-form book-form">
+          <div class="book-form__dates book-form__dates--dervices">
+            <p class="book-form__block book-form__block--services">
+              <label for="arrival" class="book-form__label">Заезд</label>
+              <input class="book-form__input book-form__arrival" type="text" id="arrival" name="arrival">
+            </p>
+            <p class="book-form__block book-form__block--services">
+              <label for="departure" class="book-form__label">Выезд</label>
+            <input class="book-form__input book-form__departure" type="text" id="departure" name="departure">
+            </p>
+          </div>
+          <div class="book-form__guests">
+            <label for="guests" class="book-form__label">Гости</label>
+            <p>
+              <input class="book-form__input-guest" type="text" id="guests" placeholder="1" name="guests">
+            </p>
+          </div>
+          <div class="help__button help__button--services">
+            <button class="book-form__submit book-form__submit--services button--book  button" type="submit">Найти номер</button>
+            <p class="help__personal">
+              Нажав на кнопку, я соглашаюсь на обработку <span>персональных данных</span>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </header>
+  <main class="services">
+    <div class="services__wrapper">
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Главная</a></li>
+        <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Услуги</a></li>
+      </ul>
+      <div class="services__slogan">
+        Мы сделаем Ваш отдых максимально комфортным!
+      </div>
+      <div class="services__text">
+        Предлагаем ознакомиться с кратким перечнем предоставляемых услуг.
+      </div>
+      <div class="services__list">
+        <div class="services__block">
+          <div class="services__item services__item--rest">
+            <div class="services__name rest">
+              <div class="services__name-title">
+                Ресторан
+              </div>
+            </div>
+            <div class="services__descr">
+              <div class="services__descr--title">
+                Ресторан Relax food gods
+              </div>
+              <div class="services__descr--text">
+                Очень вкусно кормят. Шикарная музыка, атмосфера. Широкий выбор напитков. Повара удовлетворят все Ваши гастрономические изыски в предпочтениях.
+              </div>
+            </div>
+          </div>
+          <div class="services__item services__item--bar">
+            <div class="services__name bar">
+              <div class="services__name-title">
+                Лобби-бар
+              </div>
+            </div>
+            <div class="services__descr">
+              <div class="services__descr--title">
+                Лобби бар Gurzuf Bar
+              </div>
+              <div class="services__descr--text">
+                Здесь Вы можете попробовать разнообразные коктейли, а также вкуснейшее домашнее вино.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="services__block">
+          <div class="services__item services__item--shop">
+            <div class="services__name shop">
+              <div class="services__name-title">
+                Магазин
+              </div>
+            </div>
+            <div class="services__descr">
+              <div class="services__descr--title">
+                Магазин Gurzuf Souvenire
+              </div>
+              <div class="services__descr--text">
+                Здевьь Вы можете приобрести сувениры на люой вкус, чтобы порадовать своих близких и друзей.
+              </div>
+            </div>
+          </div>
+          <div class="services__item services__item--play">
+            <div class="services__name play">
+              <div class="services__name-title">
+                Игровая площадка
+              </div>
+            </div>
+            <div class="services__descr">
+              <div class="services__descr--title">
+                Игровая площадка для развлечений
+              </div>
+              <div class="services__descr--text">
+                Большая игровая площадка для Ваших детей поможет увлечь Ваших детей и позволит Вам освободить время на себя.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="services__block">
+          <div class="services__item services__item--serf">
+            <div class="services__name serf">
+              <div class="services__name-title">
+                Аренда досок для серфинга
+              </div>
+            </div>
+            <div class="services__descr">
+              <div class="services__descr--title">
+                Аренда досок для серфинга
+              </div>
+              <div class="services__descr--text">
+                Возьмите доску, чтобы ощутить всю энергию моря.
+              </div>
+            </div>
+          </div>
+          <div class="services__item services__item--rent">
+            <div class="services__name rent">
+              <div class="services__name-title">
+                Прокат машин
+              </div>
+            </div>
+            <div class="services__descr">
+              <div class="services__descr--title">
+                Прокат машин
+              </div>
+              <div class="services__descr--text">
+                Прокат автомобилей позволит Вам насладиться красотами Крыма и увидеть даже самые неведомые обычному туристу достопримечательности.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="services__block">
+          <div class="services__item services__item--transfer">
+            <div class="services__name transfer">
+              <div class="services__name-title">
+                Трансфер
+              </div>
+            </div>
+            <div class="services__descr">
+              <div class="services__descr--title">
+                Трансфер
+              </div>
+              <div class="services__descr--text">
+                Наши водители могут доставить Вас в аэропорт или на вокзал в любое время суток.
+              </div>
+            </div>
+          </div>
+          <div class="services__item services__item--garage">
+            <div class="services__name garage">
+              <div class="services__name-title">
+                Гараж
+              </div>
+            </div>
+            <div class="services__descr">
+              <div class="services__descr--title">
+                Гараж
+              </div>
+              <div class="services__descr--text">
+                Вы можете припарковать собственный автомобиль в нашем гараже.
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="services__block">
+          <div class="services__item services__item--massage">
+            <div class="services__name massage">
+              <div class="services__name-title">
+                Массажный салон
+              </div>
+            </div>
+            <div class="services__descr">
+              <div class="services__descr--title">
+                Массажный салон
+              </div>
+              <div class="services__descr--text">
+                У нас работают только самые лучшие массажисты, помогут Вам расслабиться или наоборот проработать Ваши проблемные места.
+              </div>
+            </div>
+          </div>
+          <div class="services__item services__item--excursions">
+            <div class="services__name excursions">
+              <div class="services__name-title">
+                Экскурсии
+              </div>
+            </div>
+            <div class="services__descr">
+              <div class="services__descr--title">
+                Экскурсии по интересным местам Крыма
+              </div>
+              <div class="services__descr--text">
+               Наши потрясащие гиды поведают Вам историю Крыма и покажут Вам самые интересные места нашего полуострова.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <ul class="footer__socials">
+        <li class="footer__social-item">
+          <a href="#" class="footer__social-link">
+            <img src="img/index/footer/socials/vb.svg" alt="Мы в Viber">
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a href="#" class="footer__social-link">
+            <img src="img/index/footer/socials/tg.svg" alt="Мы в Telegram">
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a href="#" class="footer__social-link">
+            <img src="img/index/footer/socials/wa.svg" alt="Мы в WhatsApp">
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a href="#" class="footer__social-link">
+            <img src="img/index/footer/socials/ig.svg" alt="Мы в Instagram">
+          </a>
+        </li>
+      </ul>
+      <div class="footer__help-wrapper">
+        <div class="footer__help">
+          <p class="footer__help-title">
+            Нужна помощь?
+          </p>
+          <p class="footer__help-text">
+            Большинство ответов уже находится в разделе <a href="#" class="footer__help-link"><span>FAQ</span></a>, но вы также можете написать нам в <a href="#" class="footer__help-link">Службу поддержки.</a>
+          </p>
+        </div>
+        <div class="footer__info">
+          <picture class="footer__info-photo">
+            <source media="(min-width: 768px)" srcset="img/index/footer/photo-desktop.png">
+            <img src="img/index/footer/photo-mobile.png" alt="Фото специалиста службы поддержки">
+          </picture>
+          <div class="footer__info-text">
+            <p class="footer__lost-info">
+            Отсутвует какая-то информация?
+            </p>
+            <a href="#" class="footer__advice">Посоветуйте нам, что добавить ></a>
+          </div>
+        </div>
+      </div>
+      <ul class="header__menu-list-footer footer__menu-list">
+        <li class="header__menu-item">Об отеле
+            <ul class="header__menu-sublist">
+              <li class="header__menu-subitem"><a href="about.html" class="header__menu-sublink">О нас</a></li>
+              <li class="header__menu-subitem"><a href="rooms.html" class="header__menu-sublink">Номера</a></li>
+              <li class="header__menu-subitem"><a href="services.html" class="header__menu-sublink">Услуги</a></li>
+              <li class="header__menu-subitem"><a href="entertainment.html" class="header__menu-sublink">Развлечения</a></li>
+              <li class="header__menu-subitem"><a href="reviews.html" class="header__menu-sublink">Отзывы</a></li>
+            </ul>
+        </li>
+        <li class="header__menu-item">О курорте
+          <ul class="header__menu-sublist">
+            <li class="header__menu-subitem"><a href="resort.html" class="header__menu-sublink">Курорт Гурзуф</a></li>
+            <li class="header__menu-subitem"><a href="excursions.html" class="header__menu-sublink">Экскурсии</a></li>
+            <li class="header__menu-subitem"><a href="crimea.html" class="header__menu-sublink">Крым</a></li>
+          </ul>
+        </li>
+        <li class="header__menu-item">Для путешествующих
+          <ul class="header__menu-sublist">
+            <li class="header__menu-subitem"><a href="for-travellers.html" class="header__menu-sublink">Служба поддержки</a></li>
+            <li class="header__menu-subitem"><a href="faq.html" class="header__menu-sublink">Часто задаваемые вопросы</a></li>
+            <li class="header__menu-subitem"><a href="contacts.html" class="header__menu-sublink">Контакты</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="footer-mail__wrapper">
+        <div class="footer__mail">
+          <div class="footer__mail-text">
+            Подписаться на рассылку
+          </div>
+          <form action="post" class="footer__mail-form">
+            <label class="footer__label visually-hidden" for="email">Ваш e-mail</label>
+            <input class="footer__input" type="email" name="email" id="email" placeholder="Ваш e-mail">
+            <button class="footer__submit" type="submit"></button>
+          </form>
+        </div>
+        <ul class="footer__cards">
+          <li class="footer__card-item">
+            <img src="img/index/footer/cards/1.svg" alt="Платежная система VISA">
+          </li>
+          <li class="footer__card-item">
+            <img src="img/index/footer/cards/2.svg" alt="Платежная система МИР">
+          </li>
+          <li class="footer__card-item">
+            <img src="img/index/footer/cards/3.svg" alt="Платежная система MASTERCARD">
+          </li>
+        </ul>
+      </div>
+      <div class="footer__rools">
+        <a class="footer__rool-link" href="#">
+          Правила и условия
+        </a>
+        <a class="footer__rool-link" href="#">
+          Согласие на обработку персональных данных
+        </a>
+        <a class="footer__rool-link" href="#">
+          Политика конфиденциальности
+        </a>
+      </div>
+    </div>
+    <div class="footer__copyrights">
+      <p>
+        2020 © Gurzuf relax. Все права защищены
+      </p>
+    </div>
+  </footer>
+
+
+  <section class="modal__wrapper" data-modal id="modal__wrapper--phone">
+    <div class="modal modal--phone ">
+      <form action="post" class="help__form">
+        <div class="modal__title">
+          Введите, пожалуйста, Ваши контактные данные:
+        </div>
+        <p>
+          <label for="name" class="help__label visually-hidden">Ваше имя</label>
+          <input class="help__input modal__input--name" type="text"  name="name" id="name" placeholder="Ваше имя" required>
+        </p>
+        <p>
+          <label for="tel" class="help__label visually-hidden">Телефон</label>
+          <input class="help__input modal__input--tel" type="tel"  name="tel" id="tel" placeholder="Телефон" required>
+        </p>
+        <div class="help__button  ">
+          <button class="help__submit modal__submit button button--book" type="submit">Отправить</button>
+          <p class="help__personal">
+            Нажав на кнопку, я соглашаюсь на обработку <span>персональных данных</span>
+          </p>
+        </div>
+      </form>
+      <button class="modal__close" type="button"></button>
+    </div>
+  </section>
+  <section class="modal__wrapper" data-modal id="modal__wrapper--answer">
+    <div class="modal modal--answer">
+      <div class="modal__text">
+        <p>Спасибо!</p>
+        <p>Мы с Вами свяжемся!</p>
+      </div>
+      <button class="modal__close" type="button"></button>
+    </div>
+  </section>
+
+
+  <script>
+    $(document).ready(function () {
+      $('.book-form__input').datepicker();
+      var d = new Date();
+
+      var month = d.getMonth()+1;
+      var day = d.getDate();
+
+      var output = d.getFullYear() + '/' +
+          ((''+month).length<2 ? '0' : '') + month + '/' +
+          ((''+day).length<2 ? '0' : '') + day;
+
+
+      $('.book-form__input').val(output);
+          });
+  </script>
+  <script src="js/services.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>Отель Gurzuf Relax в Крыму</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link href="css/jquery-ui-1.9.2.custom.css" rel="stylesheet">
+
+  <script src="js/jquery-1.8.3.js"></script>
+	<script src="js/jquery-ui-1.9.2.custom.js"></script>
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+
+
+  <header class="header">
+    <div class="header__wrapper">
+      <nav class="header__menu">
+        <input class="header__checkbox" type="checkbox" id="check-menu">
+        <label class="header__label" for="check-menu"></label>
+          <div class="header__menu-button">
+            <div class="header__burger">
+              <div class="burger--line line-first"></div>
+              <div class="burger--line line-second"></div>
+              <div class="burger--line line-third"></div>
+              <div class="burger--line line-fourth"></div>
+            </div>
+            <ul class="header__menu-list">
+            <li class="header__menu-item">Об отеле
+                <ul class="header__menu-sublist">
+                  <li class="header__menu-subitem"><a href="about.html" class="header__menu-sublink">О нас</a></li>
+                  <li class="header__menu-subitem"><a href="rooms.html" class="header__menu-sublink">Номера</a></li>
+                  <li class="header__menu-subitem"><a href="services.html" class="header__menu-sublink">Услуги</a></li>
+                  <li class="header__menu-subitem"><a href="entertainment.html" class="header__menu-sublink">Развлечения</a></li>
+                  <li class="header__menu-subitem"><a href="reviews.html" class="header__menu-sublink">Отзывы</a></li>
+                </ul>
+            </li>
+            <li class="header__menu-item">О курорте
+              <ul class="header__menu-sublist">
+                <li class="header__menu-subitem"><a href="resort.html" class="header__menu-sublink">Курорт Гурзуф</a></li>
+                <li class="header__menu-subitem"><a href="excursions.html" class="header__menu-sublink">Экскурсии</a></li>
+                <li class="header__menu-subitem"><a href="crimea.html" class="header__menu-sublink">Крым</a></li>
+              </ul>
+            </li>
+            <li class="header__menu-item">Для путешествующих
+              <ul class="header__menu-sublist">
+                <li class="header__menu-subitem"><a href="for-travellers.html" class="header__menu-sublink">Служба поддержки</a></li>
+                <li class="header__menu-subitem"><a href="faq.html" class="header__menu-sublink">Часто задаваемые вопросы</a></li>
+                <li class="header__menu-subitem"><a href="contacts.html" class="header__menu-sublink">Контакты</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="header__logo">
+          <a class="header__logo-link" href="index.html">
+            <picture>
+              <source media="(min-width: 1920px)" srcset="img/index/logo-desktop.png">
+              <img src="img/index/logo-mobile.png" alt="Логотип Отель Gurzuf Relax" class="header__img">
+            </picture>
+          </a>
+        </div>
+        <div class="header__address">
+          Крым, пгт. Гурзуф, ул. Ялтинская, д. 14-з
+        </div>
+        <div class="header__contacts">
+          <a href="tel:8 578 503 48 82" class="header__phone-link">+ 7-578-503-48-82</a>
+          <ul class="header__social-list">
+            <li class="header__social-item"><a href="#" class="header__social-link"><img src="img/index/socials/vb.svg" alt="Мы в Viber" width="18px" height="19px"></a>
+            </li>
+            <li class="header__social-item"><a href="#" class="header__social-link"><img src="img/index/socials/tg.svg" alt="Мы в Telegram" width="23px" height="19px"></a></li>
+            <li class="header__social-item"><a href="#" class="header__social-link"><img src="img/index/socials/wa.svg" alt="Мы в WhatsApp" width="19px" height="19px"></a></li>
+          </ul>
+        </div>
+        <div class="header__call">
+          <button class="header__call-button button" type="button">Заказать звонок</button>
+        </div>
+      </nav>
+    </div>
+    <div class="intro__wrapper">
+      <h1 class="intro__title"><span>Подарите себе незабываемый отдых в отеле</span> Gurzuf relax</h1>
+      <a href="#" class="intro__more link__more">
+        Узнать больше
+      </a>
+      <div class="intro__book">
+        <form action="post" class="intro__book-form book-form">
+          <select class="intro__room-type" name="room-type[]">
+            <option selected disabled>Тип номера</option>
+            <option value="standart">Стандарт</option>
+            <option value="lux">Люкс</option>
+            <option value="familian">Семейный</option>
+          </select>
+          <div class="book-form__dates">
+            <p class="book-form__block">
+              <label for="arrival" class="book-form__label visually-hidden">Дата заезда</label>
+              <input class="book-form__input book-form__arrival" type="text" id="arrival" value="Дата заезда" name="arrival">
+            </p>
+            <p class="book-form__block">
+              <label for="departure" class="book-form__label visually-hidden">Дата выезда</label>
+            <input class="book-form__input book-form__departure" type="text" id="departure" value="Дата выезда" name="departure">
+            </p>
+            
+          </div>
+          <p>
+            <label for="name" class="book-form__label visually-hidden">Ваше имя</label>
+            <input class="book-form__name" type="text" placeholder="Ваше Имя" name="name" id="name">
+          </p>
+          
+          <p>
+            <label for="tel" class="book-form__label visually-hidden">Ваш телефон</label>
+            <input class="book-form__tel" type="tel" placeholder="Телефон" name="tel" id="tel">
+          </p>
+          <div class="help__button">
+            <button class="book-form__submit button--book button" type="submit">Забронировать</button>
+            <p class="help__personal">
+              Нажав на кнопку, я соглашаюсь на обработку <span>персональных данных</span>
+            </p>
+          </div>
+          
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <section class="about">
+    <div class="about__wrapper">
+      <h2 class="about__title">
+        Об отеле
+      </h2>
+      <div class="about__block">
+        <div class="about__text">
+          Отель «Gurzuf relax» является первым отелем класса 
+          4 звезды на черноморском поберьежье. Расположен он всего в 10 минутах ходьбы от железнодорожного вокзала и основных достопримечательностей города. <span>Номерной фонд составляют 252 номера, включая номера категории люкс, трёхкомнатные апартаменты и шикарный президентский номер. Гостиница готова удовлетворить требования самых изысканных гостей. Каждый номер оснащен современным оборудованием и имеет все необходимое для плодотворной работы и полноценного отдыха. К услугам гостей отеля: обслуживание в номерах, камера хранения, прачечная и доставка одежды
+          в химчистку города, рестораны, бары, конференц-услуги, фитнес-центр, бизнес-центр, салон красоты, казино «Royal», прокат и аренда автомобилей.
+          </span>
+        </div>
+        <a href="#" class="about__more link__more about__more--top">Узнать больше</a>
+        <div class="about__photo">
+          <button class="about__button about__button--prev" type="button"></button>
+          <button class="about__button about__button--next" type="button"></button>
+          <ul class="about__carousel">
+            <li class="about__carousel-item">
+              <picture>
+                <source media="(min-width: 1920px)" srcset="img/index/about-desktop.jpg">
+                <img class="about__img" src="img/index/about-mobile.jpg" alt="На фото изображен отель Gurzuf Relax">
+              </picture>
+            </li>
+            <li class="about__carousel-item ">
+              <picture>
+                <img class="about__img" src="img/index/about-mobile2.jpg" alt="На фото изображен отель Gurzuf Relax">
+              </picture>
+            </li>
+            <li class="about__carousel-item">
+              <picture>
+                <img class="about__img" src="img/index/about-mobile3.jpg" alt="На фото изображен отель Gurzuf Relax">
+              </picture>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a href="#" class="about__more link__more about__more--bottom">Узнать больше</a>
+    </div>
+  </section>
+
+  <section class="room">
+    <div class="room__wrapper">
+      <h2 class="room__title">Выберите номер</h2>
+      <p class="room__text">
+        У нас есть оптимальный комфортный вариант для каждого!
+      </p>
+      <button class="room__button room__button--prev" type="button"></button>
+      <button class="room__button room__button--next" type="button"></button>
+      <ul class="room__list">
+        <li class="room__item room__item--big">
+          <div class="room__photo">
+            <picture>
+              <source media="(min-width: 1920px)" srcset="img/index/room/room2-desktop.png">
+              <img class="about__img" src="img/index/room/room2-mobile.png" alt="На фото изображен отель Gurzuf Relax">
+            </picture>
+          </div>
+          <div class="room__item-title">
+            Стандарт
+          </div>
+          <div class="room_description">
+            Небольшой двухместный номер с двумя кроватями. Из окна окрывается прекрасный вид на море и территорию отеля.
+          </div>
+          
+          <ul class="room__adv-list">
+            <li class="room__adv-item room__adv--dish" >
+              Питание
+            </li>
+            <li class="room__adv-item room__adv--baby">
+              Можно с детьми
+            </li>
+            <li class="room__adv-item room__adv--parking">
+              Парковка
+            </li>
+            <li class="room__adv-item room__adv--tv">
+              Телевизор
+            </li>
+            <li class="room__adv-item room__adv--wifi">
+              Wi-fi
+            </li>
+          </ul>
+          <div class="room__book">
+            <a href="#" class="room__link button--book button">Забронировать</a>
+          </div>
+        </li>
+        <li class="room__item room__item--right room__item--small">
+          <div class="room__photo">
+            <picture>
+              <source media="(min-width: 1920px)" srcset="img/index/room/room3-desktop.png">
+              <img class="about__img" src="img/index/room/room2-mobile.png" alt="На фото изображен отель Gurzuf Relax">
+            </picture>
+          </div>
+          <div class="room__item-title">
+            Люкс
+          </div>
+          <div class="room_description">
+            Уютный двухместный номер с двуспальной кроватью. Из окна окрывается прекрасный вид на море и территорию отеля.
+          </div>
+          <ul class="room__adv-list">
+            <li class="room__adv-item room__adv--dish">
+              Питание
+            </li>
+            <li class="room__adv-item room__adv--baby">
+              Можно с детьми
+            </li>
+            <li class="room__adv-item room__adv--parking">
+              Парковка
+            </li>
+            <li class="room__adv-item room__adv--tv">
+              Телевизор
+            </li>
+            <li class="room__adv-item room__adv--wifi">
+              Wi-fi
+            </li>
+          </ul>
+          <div class="room__book">
+            <a href="#" class="room__link button--book button">Забронировать</a>
+          </div>
+        </li>
+        <li class="room__item room__item--small  room__item--left">
+          <div class="room__photo">
+            <picture>
+              <source media="(min-width: 1920px)" srcset="img/index/room/room3-desktop.png">
+              <img class="about__img" src="img/index/room/room2-mobile.png" alt="На фото изображен отель Gurzuf Relax">
+            </picture>
+          </div>
+          <div class="room__item-title">
+            Семейный
+          </div>
+          <div class="room_description">
+            Уютный двухкомнатный номер. Из окна окрывается прекрасный вид на море и территорию отеля.
+          </div>
+          <ul class="room__adv-list">
+            <li class="room__adv-item room__adv--dish">
+              Питание
+            </li>
+            <li class="room__adv-item room__adv--baby">
+              Можно с детьми
+            </li>
+            <li class="room__adv-item room__adv--parking">
+              Парковка
+            </li>
+            <li class="room__adv-item room__adv--tv">
+              Телевизор
+            </li>
+            <li class="room__adv-item room__adv--wifi">
+              Wi-fi
+            </li>
+          </ul>
+          <div class="room__book">
+            <a href="#" class="room__link button--book button">Забронировать</a>
+          </div>
+        </li>
+      </ul>
+      <a href="#" class="room__more link__more">Узнать больше</a>
+      <a href="#" class="room__choose link__more">Подобрать номер</a>
+    </div>
+  </section>
+
+  <section class="help">
+    <div class="help__wrapper">
+      <h2 class="help__title">
+        Не нашли то, что искали?
+      </h2>
+      <p class="help__text">
+        Оставьте свои контакты и наш менеджер перезвонит вам в течение 5 минут!
+      </p>
+      <form action="post" class="help__form">
+        <p>
+          <label for="name" class="help__label visually-hidden">Ваше имя</label>
+          <input class="help__input" type="text"  name="name" id="name" placeholder="Ваше имя">
+        </p>
+        <p>
+          <label for="tel" class="help__label visually-hidden">Телефон</label>
+          <input class="help__input" type="tel"  name="tel" id="tel" placeholder="Телефон">
+        </p>
+        <div class="help__button  ">
+          <button class="help__submit button button--book" type="submit">Заказать звонок</button>
+          <p class="help__personal">
+            Нажав на кнопку, я соглашаюсь на обработку <span>персональных данных</span>
+          </p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="reviews">
+    <div class="reviews__wrapper">
+      <h2 class="reviews__title">
+        Почему Gurzuf Relax?
+      </h2>
+      <p class="reviews__text">
+        На главный вопрос, почему выбирают именно нас, ответят наши горячо любимые клиенты.
+      </p>
+      <button class="reviews__button reviews__button--prev" type="button"></button>
+      <button class="reviews__button reviews__button--next" type="button"></button>
+      <ul class="reviews__list">
+        <li class="reviews__item reviews__item--big">
+          <picture class="reviews__photo">
+            <source media="(min-width: 1920px)" srcset="img/index/reviews/photo-desktop.png">
+              <img class="about__img" src="img/index/reviews/photo-mobile.png" alt="Фото клиента">
+          </picture>
+          <div class="reviews__name">Елена</div>
+          <ul class="reviews__social">
+            <li class="reviews__social-item"><a href="#" class="reviews__link"></a><img src="img/index/reviews/tg.svg" alt="Cсылка на Telegram" width="20" height="17"></li>
+            <li class="reviews__social-item"><a href="#" class="reviews__link"></a><img src="img/index/reviews/ig.svg" alt="Cсылка на Instagram" width="21" height="21"></li>
+          </ul>
+          <div class="reviews__rate">
+            <div class="reviews__rate-star"></div>
+            <div class="reviews__rate-star"></div>
+            <div class="reviews__rate-star"></div>
+            <div class="reviews__rate-star"></div>
+            <div class="reviews__rate-star"></div>
+          </div>
+          <div class="reviews__comment">
+            Я никогда и подумать не могла, что комфорт, прекрасное обслуживание и приятная обстановка могут так идеально сочетаться в одном месте! До этого я определенно не знала, что такое настоящией отдых. Я рекомендую именно этот отель, если вы хотите почувствовать то же, что я...)
+          </div>
+        </li>
+        <!-- reviews__item--big -->
+        <li class="reviews__item reviews__item--small reviews__item--right">
+          <picture class="reviews__photo">
+            <source media="(min-width: 1920px)" srcset="img/index/reviews/logo-desktop.png">
+              <img class="about__img" src="img/index/reviews/photo-mobile.png" alt="Фото клиента">
+          </picture>
+          <div class="reviews__name">Тимур</div>
+          <ul class="reviews__social">
+            <li class="reviews__social-item"><a href="#" class="reviews__link"></a><img src="img/index/reviews/tg.svg" alt="Cсылка на Telegram" width="20" height="17"></li>
+            <li class="reviews__social-item"><a href="#" class="reviews__link"></a><img src="img/index/reviews/ig.svg" alt="Cсылка на Instagram" width="21" height="21"></li>
+          </ul>
+          <div class="reviews__rate">
+            <div class="reviews__rate-star"></div>
+            <div class="reviews__rate-star"></div>
+            <div class="reviews__rate-star"></div>
+            <div class="reviews__rate-star"></div>
+          </div>
+          <div class="reviews__comment">
+            Я никогда и подумать не могла, что комфорт, прекрасное обслуживание и приятная обстановка могут так идеально сочетаться в одном месте! До этого я определенно не знала, что такое настоящией отдых. До этого я определенно не знала, что такое настоящией отдых. Я рекомендую именно этот отель, если вы хотите почувствовать то же, что я...)
+          </div>
+        </li>
+        <li class="reviews__item reviews__item--small reviews__item--left">
+          <picture class="reviews__photo">
+            <source media="(min-width: 1920px)" srcset="img/index/reviews/logo-desktop.png">
+              <img class="about__img" src="img/index/reviews/photo-mobile.png" alt="Фото клиента">
+          </picture>
+          <div class="reviews__name">Николай</div>
+          <ul class="reviews__social">
+            <li class="reviews__social-item"><a href="#" class="reviews__link"></a><img src="img/index/reviews/tg.svg" alt="Cсылка на Telegram" width="20" height="17"></li>
+            <li class="reviews__social-item"><a href="#" class="reviews__link"></a><img src="img/index/reviews/ig.svg" alt="Cсылка на Instagram" width="21" height="21"></li>
+          </ul>
+          <div class="reviews__rate">
+            <div class="reviews__rate-star"></div>
+            <div class="reviews__rate-star"></div>
+            <div class="reviews__rate-star"></div>
+            <div class="reviews__rate-star"></div>
+            <div class="reviews__rate-star"></div>
+          </div>
+          <div class="reviews__comment">
+            Я никогда и подумать не могла, что комфорт, прекрасное обслуживание и приятная обстановка могут так идеально сочетаться в одном месте! Отель супер!
+          </div>
+        </li>
+      </ul>
+      <a href="#" class="reviews__more link__more">Узнать больше</a>
+      <a href="#" class="reviews__show link__more">Больше отзывов</a>
+    </div>
+  </section>
+
+  <section class="details">
+    <div class="details__wrapper">
+      <h2 class="details__title">
+        Подарим незабываемые впечатления!
+      </h2>
+      <div class="details__text">
+        Оставьте свой e-mail и получите подробную информацию о том, как провести свой отдых с комфортом в отеле Gurzuf relax.
+      </div>
+      <form action="post" class="help__form">
+        <p>
+          <label for="name" class="help__label visually-hidden">Ваше имя</label>
+          <input class="help__input" type="text"  name="name" id="name" placeholder="Ваше имя">
+        </p>
+        <p>
+          <label for="tel" class="help__label visually-hidden">Телефон</label>
+          <input class="help__input" type="tel"  name="tel" id="tel" placeholder="Телефон">
+        </p>
+        <div class="help__button  ">
+          <button class="help__submit button button--book" type="submit">Забронировать</button>
+          <p class="help__personal">
+            Нажав на кнопку, я соглашаюсь на обработку <span>персональных данных</span>
+          </p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="faq">
+    <div class="faq__wrapper">
+      <h2 class="faq__title">
+        FAQ
+      </h2>
+      <div class="faq__text">
+        Ответы на самые часто задаваемые вопросы.
+      </div>
+      <ul class="faq__list">
+        <li class="faq__item opened">
+          <div class="faq__question">
+            Снимаются ли деньги с карты во время бронирования?
+          </div>
+          <div class="faq__answer">
+            Нет, бронирование бесплатное. Предоплата не взымается, за исключением случаев бронирования специальных предложений.
+          </div>
+        </li>
+        <li class="faq__item opened">
+          <div class="faq__question">
+            Где я могу заказать номер по самой выгодной цене?
+          </div>
+          <div class="faq__answer">
+            На нашем сайте Вы можете забронировать номер по самой выгодной цене.
+          </div>
+        </li>
+        <li class="faq__item opened">
+          <div class="faq__question">
+            Обеспечивает ли сайт защиту личных данных?
+          </div>
+          <div class="faq__answer">
+            Мы гарантируем неразглашение песрсональных данных наших гостей.
+          </div>
+        </li>
+        <li class="faq__item opened">
+          <div class="faq__question">
+            Какое время заезда и выезда?
+          </div>
+          <div class="faq__answer">
+            Время заезда - 14.00, время выезда - 12.00.
+          </div>
+        </li>
+        <li class="faq__item opened">
+          <div class="faq__question">
+            Есть ли в номере кондиционер?
+          </div>
+          <div class="faq__answer">
+            Да, все наши номера оснащены кондиционерами.
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <ul class="footer__socials">
+        <li class="footer__social-item">
+          <a href="#" class="footer__social-link">
+            <img src="img/index/footer/socials/vb.svg" alt="Мы в Viber">
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a href="#" class="footer__social-link">
+            <img src="img/index/footer/socials/tg.svg" alt="Мы в Telegram">
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a href="#" class="footer__social-link">
+            <img src="img/index/footer/socials/wa.svg" alt="Мы в WhatsApp">
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a href="#" class="footer__social-link">
+            <img src="img/index/footer/socials/ig.svg" alt="Мы в Instagram">
+          </a>
+        </li>
+      </ul>
+      <div class="footer__help-wrapper">
+        <div class="footer__help">
+          <p class="footer__help-title">
+            Нужна помощь?
+          </p>
+          <p class="footer__help-text">
+            Большинство ответов уже находится в разделе <a href="#" class="footer__help-link"><span>FAQ</span></a>, но вы также можете написать нам в <a href="#" class="footer__help-link">Службу поддержки.</a>
+          </p>
+        </div>
+        <div class="footer__info">
+          <picture class="footer__info-photo">
+            <source media="(min-width: 768px)" srcset="img/index/footer/photo-desktop.png">
+            <img src="img/index/footer/photo-mobile.png" alt="Фото специалиста службы поддержки">
+          </picture>
+          <div class="footer__info-text">
+            <p class="footer__lost-info">
+            Отсутвует какая-то информация?
+            </p>
+            <a href="#" class="footer__advice">Посоветуйте нам, что добавить ></a>
+          </div>
+        </div>
+      </div>
+      <ul class="header__menu-list-footer footer__menu-list">
+        <li class="header__menu-item">Об отеле
+            <ul class="header__menu-sublist">
+              <li class="header__menu-subitem"><a href="about.html" class="header__menu-sublink">О нас</a></li>
+              <li class="header__menu-subitem"><a href="rooms.html" class="header__menu-sublink">Номера</a></li>
+              <li class="header__menu-subitem"><a href="services.html" class="header__menu-sublink">Услуги</a></li>
+              <li class="header__menu-subitem"><a href="entertainment.html" class="header__menu-sublink">Развлечения</a></li>
+              <li class="header__menu-subitem"><a href="reviews.html" class="header__menu-sublink">Отзывы</a></li>
+            </ul>
+        </li>
+        <li class="header__menu-item">О курорте
+          <ul class="header__menu-sublist">
+            <li class="header__menu-subitem"><a href="resort.html" class="header__menu-sublink">Курорт Гурзуф</a></li>
+            <li class="header__menu-subitem"><a href="excursions.html" class="header__menu-sublink">Экскурсии</a></li>
+            <li class="header__menu-subitem"><a href="crimea.html" class="header__menu-sublink">Крым</a></li>
+          </ul>
+        </li>
+        <li class="header__menu-item">Для путешествующих
+          <ul class="header__menu-sublist">
+            <li class="header__menu-subitem"><a href="for-travellers.html" class="header__menu-sublink">Служба поддержки</a></li>
+            <li class="header__menu-subitem"><a href="faq.html" class="header__menu-sublink">Часто задаваемые вопросы</a></li>
+            <li class="header__menu-subitem"><a href="contacts.html" class="header__menu-sublink">Контакты</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="footer-mail__wrapper">
+        <div class="footer__mail">
+          <div class="footer__mail-text">
+            Подписаться на рассылку
+          </div>
+          <form action="post" class="footer__mail-form">
+            <label class="footer__label visually-hidden" for="email">Ваш e-mail</label>
+            <input class="footer__input" type="email" name="email" id="email" placeholder="Ваш e-mail">
+            <button class="footer__submit" type="submit"></button>
+          </form>
+        </div>
+        <ul class="footer__cards">
+          <li class="footer__card-item">
+            <img src="img/index/footer/cards/1.svg" alt="Платежная система VISA">
+          </li>
+          <li class="footer__card-item">
+            <img src="img/index/footer/cards/2.svg" alt="Платежная система МИР">
+          </li>
+          <li class="footer__card-item">
+            <img src="img/index/footer/cards/3.svg" alt="Платежная система MASTERCARD">
+          </li>
+        </ul>
+      </div>
+      <div class="footer__rools">
+        <a class="footer__rool-link" href="#">
+          Правила и условия
+        </a>
+        <a class="footer__rool-link" href="#">
+          Согласие на обработку персональных данных
+        </a>
+        <a class="footer__rool-link" href="#">
+          Политика конфиденциальности
+        </a>
+      </div>
+    </div>
+    <div class="footer__copyrights">
+      <p>
+        2020 © Gurzuf relax. Все права защищены
+      </p>
+    </div>
+  </footer>
+
+  <section class="modal__wrapper" data-modal id="modal__wrapper--phone">
+    <div class="modal modal--phone" id="modal--phone">
+      <form action="post" class="help__form">
+        <div class="modal__title">
+          Введите, пожалуйста, Ваши контактные данные:
+        </div>
+        <p>
+          <label for="name" class="help__label visually-hidden">Ваше имя</label>
+          <input class="help__input modal__input--name" type="text"  name="name" id="name" placeholder="Ваше имя" required>
+        </p>
+        <p>
+          <label for="tel" class="help__label visually-hidden">Телефон</label>
+          <input class="help__input modal__input--tel" type="tel"  name="tel" id="tel" placeholder="Телефон" required>
+        </p>
+        <div class="help__button  ">
+          <button class="help__submit modal__submit button button--book" type="submit">Отправить</button>
+          <p class="help__personal">
+            Нажав на кнопку, я соглашаюсь на обработку <span>персональных данных</span>
+          </p>
+        </div>
+      </form>
+      <button class="modal__close" type="button"></button>
+    </div>
+  </section>
+  <section class="modal__wrapper" data-modal id="modal__wrapper--answer">
+    <div class="modal modal--answer">
+      <div class="modal__text">
+        <p>Спасибо!</p>
+        <p>Мы с Вами свяжемся!</p>
+      </div>
+      <button class="modal__close" type="button"></button>
+    </div>
+  </section>
+
+
+  <script>
+    $(document).ready(function () {
+      $('.book-form__input').datepicker();
+    });
+  </script>
+    <script src="js/main.js"></script>
+  
+</body>
+</html>
